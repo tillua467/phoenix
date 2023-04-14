@@ -1,7 +1,7 @@
 [
   {
     "remote": "github",
-    "repository": "RonitKrShah/vendor_xiaomi_phoenix",
+    "repository": "shripal17/android_vendor_xiaomi_phoenix",
     "target_path": "vendor/xiaomi/phoenix",
     "revision": "13"
   },
