@@ -7,9 +7,9 @@
   },
   {
     "remote": "github",
-    "repository": "San4255/risan---kernel_xiaomi_phoenix",
+    "repository": "Pzqqt/android_kernel_xiaomi_sm6150-1",
     "target_path": "kernel/xiaomi/phoenix",
-    "revision": "risan"
+    "revision": "paradox-rerebase"
   },
   {
     "remote": "github",
