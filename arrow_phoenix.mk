@@ -27,5 +27,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Arrow Specific Props
 ARROW_BUILD_TYPE := UNOFFICIAL
+ARROW_GAPPS := true
+WITH_GMS := true
 
 DEVICE_MAINTAINER := shripal17
