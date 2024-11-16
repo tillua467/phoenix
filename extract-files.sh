@@ -56,6 +56,12 @@ function blob_fixup() {
     vendor/lib/libwvhidl.so)
         [ "$2" = "" ] && return 0
         "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
+        "${PATCHELF}" --set-soname "libcrypto-v33.so" "${2}"
+        ;;
+    vendor/lib64/mediadrm/libwvdrmengine.so)
+        [ "$2" = "" ] && return 0
+        "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
+        "${PATCHELF}" --set-soname "libcrypto-v33.so" "${2}"
         ;;
     vendor/lib64/libgoodixhwfingerprint.so )
     "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
