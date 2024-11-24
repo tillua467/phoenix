@@ -251,3 +251,8 @@ persist.vendor.ims.disableQXDMLogs=1
 
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
+
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_location=1080|855|218|local:4630946711218184577
+persist.vendor.fingerprint.sensor_modules=fortsense,fpc,goodix
