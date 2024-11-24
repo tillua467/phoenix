@@ -186,9 +186,6 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 
-# Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power-libperfmgr/power-mode.cpp
-
 # Props
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
