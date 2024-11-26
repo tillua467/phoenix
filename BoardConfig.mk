@@ -189,6 +189,9 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Power
+TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(DEVICE_PATH):libperfmgr-ext-xiaomi
+
 # Props
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
@@ -216,6 +219,7 @@ VENDOR_SECURITY_PATCH := 2021-11-01
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
+include device/bliss/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
