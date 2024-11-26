@@ -1,1 +1,4 @@
 type lirc_device, dev_type;
+
+# Display
+type touchfeature_device, dev_type;
