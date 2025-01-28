@@ -385,6 +385,10 @@ PRODUCT_PACKAGES += \
     NotchNoFillOverlay
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayPhoenix \
     DialerOverlayPhoenix \
@@ -530,7 +534,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/xiaomi \
-    hardware/bliss/interfaces/power-libperfmgr \
+    hardware/lineage/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client 
 
 # Thermal
@@ -592,3 +596,6 @@ PRODUCT_PACKAGES += \
     libqdMetaData.vendor \
     libwfdaac_vendor \
     vendor.display.config@2.0
+
+# Update
+AB_OTA_UPDATER := false

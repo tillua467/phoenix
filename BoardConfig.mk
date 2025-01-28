@@ -164,7 +164,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 TARGET_BOARD_PLATFORM := sm6150
 
 # Partitions
-include vendor/bliss/config/BoardConfigReservedSize.mk
+include vendor/lineage/config/BoardConfigReservedSize.mk
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -219,7 +219,7 @@ VENDOR_SECURITY_PATCH := 2021-11-01
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
-include device/bliss/sepolicy/libperfmgr/sepolicy.mk
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
